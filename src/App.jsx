@@ -3,7 +3,6 @@ import Modal from 'react-modal'; //http://reactcommunity.org/react-modal/
 import { Container, Row, Col, Button } from 'reactstrap'; //
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import './App.css';
-import Codebook from './Containers/Codebook';
 import Questions from './Containers/Questions';
 import Surveys from './Containers/Surveys';
 
@@ -181,12 +180,7 @@ class App extends Component {
         </header> */}
         <Container className="App-body">
           <Row>
-            { this.state.toolOn &&
-              <Col className="cb-col">
-                <Codebook />
-              </Col>
-            }
-            <Col className="p-4">
+            <Col className="p-4 col-sm-12 col-md-6 offset-md-3">
               <Questions
                 onRatingComplete={this.onRatingComplete}
                 toolOn={this.state.toolOn}

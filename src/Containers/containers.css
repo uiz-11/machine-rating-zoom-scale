@@ -32,7 +32,7 @@ div .elab-row * {
 .text-ctn {
   overflow-y: scroll;
   position: relative;
-  max-height: 550px;
+  max-height: 400px;
 }
 
 div .text-blk {
@@ -41,5 +41,9 @@ div .text-blk {
 
 ul {
   list-style-type: none;
+  text-align: left;
+}
+
+.alert {
   text-align: left;
 }

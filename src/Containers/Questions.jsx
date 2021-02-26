@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, ButtonGroup } from 'reactstrap';
 import Modal from 'react-modal';
 import './containers.css';
+import ScaleRate from './ScaleRate';
 import DocsFile from '../docs.json';
 
 Modal.setAppElement('#root');
@@ -41,10 +42,15 @@ class Questions extends Component {
   }
 
   qualityCheck() {
+    const { toolOn } = this.props;
+
     return(
       <div>
         <p>We are testing how the codebook provided affects your labeling experience. Read the guides for each label and use them when making rating decisions. Use the codebook instructions under the relevant tab to decide how to rate this answer to the question: </p>
         <h4>What is the most comfortable way to sleep on a plane?</h4>
+        { toolOn &&
+          <ScaleRate confidence={0.89167821}></ScaleRate>
+        }
         <p>The best way to improve sleep when on a plane is having head/neck support. Headrests on the seat sometimes fold inwards to support the head, or bring a neck pillow.</p>
         <ButtonGroup>
           <Button
@@ -122,6 +128,9 @@ class Questions extends Component {
         <div>
           <h4>What is the most comfortable way to sleep on a plane?</h4>
           <h6>Instructions: Rate the relevance of the answer below:</h6>
+          { toolOn &&
+            <ScaleRate confidence={docArray[qCount].confidence}></ScaleRate>
+          }
           {/* <p> */}
             <p
               dangerouslySetInnerHTML={ { __html: docArray[qCount].text } }
