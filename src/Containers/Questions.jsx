@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, ButtonGroup } from 'reactstrap';
+import { Button, ButtonGroup, Badge } from 'reactstrap';
 import Modal from 'react-modal';
 import './containers.css';
 import ScaleRate from './ScaleRate';
@@ -131,13 +131,14 @@ class Questions extends Component {
           { toolOn &&
             <ScaleRate confidence={docArray[qCount].confidence}></ScaleRate>
           }
-          {/* <p> */}
-            <p
-              dangerouslySetInnerHTML={ { __html: docArray[qCount].text } }
-              className="text-ctn fade-out"
-            >
-            </p>
-          {/* </p> */}
+          <div>      
+            <Badge color="info">▼ scroll if possible</Badge>
+          </div>
+          <div
+            dangerouslySetInnerHTML={ { __html: docArray[qCount].text } }
+            className="text-ctn fade-out"
+          >
+          </div>
           <ButtonGroup>
             <Button
               value="10"

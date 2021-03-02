@@ -30,9 +30,10 @@ div .elab-row * {
 /* Make only the document scroll */
 
 .text-ctn {
+  padding-top: 0.5rem;
   overflow-y: scroll;
   position: relative;
-  max-height: 400px;
+  max-height: 300px;
 }
 
 div .text-blk {
@@ -46,4 +47,10 @@ ul {
 
 .alert {
   text-align: left;
+}
+
+.progress {
+  background: linear-gradient(to right, #3399ff 0%, #ffff66 100%);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }

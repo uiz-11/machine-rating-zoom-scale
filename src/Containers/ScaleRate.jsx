@@ -1,34 +1,33 @@
 import React, { Component } from 'react';
-import { Progress, Row, Col, Badge } from 'reactstrap';
+import { Progress, Row, Col, Card, CardBody } from 'reactstrap';
 
 class ScaleRate extends Component {
 
   render() {
     const { confidence } = this.props;
-    
+
+    let width = confidence*100+1.5
     return (
       <div>
-        <Row>
-          <Col>
-            <div className="text-left">
-              { confidence > 0.5 ? 
-                <Badge color="primary">Relevant</Badge>
-                : <Badge color="light" style={{"backgroundColor": "white"}}>Relevant</Badge>}
+        <Card>
+          <CardBody>
+            <b>Machine thinks this document is having a...</b>
+            <div className="text-right" style={{width: width+"%", transitionDuration: "0.6s"}}>
+            ▼
             </div>
-          </Col>
-          <Col>
-            <div className="text-right">
-            { confidence < 0.5 ? 
-                <Badge color="warning">Irrelevant</Badge>
-                : <Badge color="light" style={{"backgroundColor": "white"}}>Irrelevant</Badge>}
-            </div>
-          </Col>
-        </Row>
-        <Progress multi>
-          <Progress bar color="primary" value={confidence} max={0.5}></Progress>
-          <Progress bar color="warning" value={1-confidence} max={0.5}></Progress>
-        </Progress>
-
+            <Progress multi className="justify-content-end">
+              <Progress bar color="light" value={1-confidence} max={1}></Progress>
+            </Progress>
+            <Row>
+              <Col className="text-left">
+                Low relevance
+              </Col>
+              <Col className="text-right">
+                High relevance
+              </Col>
+            </Row>
+          </CardBody>
+        </Card>
       </div>
     );
   }
