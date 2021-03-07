@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/machine-rating-zoom-scale/static/css/main.f75533f0.chunk.css",
+    "main.js": "/machine-rating-zoom-scale/static/js/main.f854e334.chunk.js",
+    "main.js.map": "/machine-rating-zoom-scale/static/js/main.f854e334.chunk.js.map",
+    "runtime-main.js": "/machine-rating-zoom-scale/static/js/runtime-main.dcbdf723.js",
+    "runtime-main.js.map": "/machine-rating-zoom-scale/static/js/runtime-main.dcbdf723.js.map",
+    "static/css/2.3cf5d70f.chunk.css": "/machine-rating-zoom-scale/static/css/2.3cf5d70f.chunk.css",
+    "static/js/2.04da1bf3.chunk.js": "/machine-rating-zoom-scale/static/js/2.04da1bf3.chunk.js",
+    "static/js/2.04da1bf3.chunk.js.map": "/machine-rating-zoom-scale/static/js/2.04da1bf3.chunk.js.map",
+    "index.html": "/machine-rating-zoom-scale/index.html",
+    "precache-manifest.6fc05f4773bc84bf8ae4e5e994eba1e1.js": "/machine-rating-zoom-scale/precache-manifest.6fc05f4773bc84bf8ae4e5e994eba1e1.js",
+    "service-worker.js": "/machine-rating-zoom-scale/service-worker.js",
+    "static/css/2.3cf5d70f.chunk.css.map": "/machine-rating-zoom-scale/static/css/2.3cf5d70f.chunk.css.map",
+    "static/css/main.f75533f0.chunk.css.map": "/machine-rating-zoom-scale/static/css/main.f75533f0.chunk.css.map",
+    "static/js/2.04da1bf3.chunk.js.LICENSE.txt": "/machine-rating-zoom-scale/static/js/2.04da1bf3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dcbdf723.js",
+    "static/css/2.3cf5d70f.chunk.css",
+    "static/js/2.04da1bf3.chunk.js",
+    "static/css/main.f75533f0.chunk.css",
+    "static/js/main.f854e334.chunk.js"
+  ]
+}

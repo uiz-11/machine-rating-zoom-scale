@@ -1,6 +1,6 @@
 {
-  "homepage": "http://hollechristensen.github.io/",
-  "name": "machine-rating-zoom",
+  "homepage": "http://uiz-11.github.io/machine-rating-zoom-scale",
+  "name": "machine-rating-zoom-scale",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
