@@ -30,14 +30,7 @@ div .elab-row * {
 /* Make only the document scroll */
 
 .text-ctn {
-  padding-top: 0.5rem;
-  overflow-y: scroll;
-  position: relative;
-  max-height: 300px;
-}
-
-div .text-blk {
-  padding: 0.2rem;
+  margin: 0.5rem;
 }
 
 ul {

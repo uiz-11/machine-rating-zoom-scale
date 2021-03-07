@@ -27,6 +27,15 @@ class Questions extends Component {
     window.scrollTo(0, 0)
   }
 
+  onScroll = (event) => {
+    console.log("called");
+    var element = event.target;
+    if (element.scrollHeight - element.scrollTop === element.clientHeight)
+    {
+        console.log('scrolled');
+    }
+  }
+
   displayInstructions() {
     return(
       <div>
@@ -101,8 +110,6 @@ class Questions extends Component {
       trapValues: trapValues,
     });
 
-
-
     if (this.state.qCount + 1 === numDocs) {
       onRatingComplete(ratingsValues);
     }
@@ -131,12 +138,10 @@ class Questions extends Component {
           { toolOn &&
             <ScaleRate confidence={docArray[qCount].confidence}></ScaleRate>
           }
-          <div>      
-            <Badge color="info">▼ scroll if possible</Badge>
-          </div>
           <div
             dangerouslySetInnerHTML={ { __html: docArray[qCount].text } }
-            className="text-ctn fade-out"
+            className="text-ctn"
+            onScroll={this.onScroll}
           >
           </div>
           <ButtonGroup>

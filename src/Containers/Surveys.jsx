@@ -183,6 +183,18 @@ class Surveys extends Component {
           <Input type="range" id="e_q8" defaultValue="3" min="1" max="5" />
           strongly agree
         </div>
+        <Label>Rate your level of understanding of how machine learning classification algorithms are trained</Label>
+        <div className="elab-row" id="e_q9">
+          Novice
+          <Input type="range" id="e_q9" defaultValue="4" min="1" max="7" />
+          expert
+        </div>
+        <Label>Rate the *overall* accuracy of the machine estimation of the rating compared to your final rating</Label>
+        <div className="elab-row" id="e_q10">
+          Not very accurate
+          <Input type="range" id="e_q10" defaultValue="4" min="1" max="7" />
+          very accurate
+        </div>
         <Button type="submit">Submit</Button>
       </Form>
       </Container>
