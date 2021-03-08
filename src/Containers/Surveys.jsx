@@ -34,7 +34,9 @@ class Surveys extends Component {
       'elab5': e.target.e_q5.value,
       'elab6': e.target.e_q6.value,
       'elab7': e.target.e_q7.value,
-      'elab8': e.target.e_q8.value
+      'elab8': e.target.e_q8.value,
+      'elab9': e.target.e_q9.value,
+      'elab10': e.target.e_q10.value
     }
 
     this.props.onElabSubmit(elabValues);
